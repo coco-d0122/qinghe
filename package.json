@@ -1,0 +1,15 @@
+{
+  "name": "qinghe-reimbursement-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "青禾报销助手：制度自助查询 + 经授权查询本人单据",
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client",
+    "dev": "node --watch server/src/server.js",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "node server/src/server.js",
+    "test:api": "node server/scripts/smoke.mjs",
+    "db:reset": "node server/scripts/reset.mjs"
+  }
+}
